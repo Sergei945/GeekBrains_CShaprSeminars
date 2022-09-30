@@ -1,0 +1,15 @@
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\bin\Debug\net6.0\example001.exe
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\bin\Debug\net6.0\example001.deps.json
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\bin\Debug\net6.0\example001.runtimeconfig.json
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\bin\Debug\net6.0\example001.dll
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\bin\Debug\net6.0\example001.pdb
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\obj\Debug\net6.0\example001.csproj.AssemblyReference.cache
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\obj\Debug\net6.0\example001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\obj\Debug\net6.0\example001.AssemblyInfoInputs.cache
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\obj\Debug\net6.0\example001.AssemblyInfo.cs
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\obj\Debug\net6.0\example001.csproj.CoreCompileInputs.cache
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\obj\Debug\net6.0\example001.dll
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\obj\Debug\net6.0\refint\example001.dll
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\obj\Debug\net6.0\example001.pdb
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\obj\Debug\net6.0\example001.genruntimeconfig.cache
+C:\Users\Avel8\OneDrive\GeekBrains\C#\Семинары\classWorks\example001\obj\Debug\net6.0\ref\example001.dll
