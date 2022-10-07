@@ -52,17 +52,17 @@ Console.Write( $"Расстояние между ними в 2D простран
 
 // Напишите программу, которая принимает на вход число (N) и выдаёт ряд квадратов чисел от 1 до N.
 
-// void showSqrt(int num) 
-// {
-//   for (int i = 1; i < num; i++)
+void showSqrt(int num) 
+{
+  for (int i = 1; i < num; i++)
 
-//   {
-//     Console.WriteLine(i * i);
-//   }
+  {
+    Console.WriteLine(i * i);
+  }
 
-// }
+}
 
-// Console.Write("Напишите число для подсчёта ряда квадратов числа: ");
-// int numOneX = Convert.ToUInt32(Console.ReadLine());
+Console.Write("Напишите число для подсчёта ряда квадратов числа: ");
+int numOneX = Convert.ToInt32(Console.ReadLine());
 
-// showSqrt(numOneX);
+showSqrt(numOneX);
