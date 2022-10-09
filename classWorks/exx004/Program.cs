@@ -38,13 +38,13 @@
 //   double distance = Math.Sqrt((numTwoX - numOneX) * (numTwoX - numOneX) + (numTwoY - numOneY) * (numTwoY - numOneY));
 //   return Math.Round(distance, 2);
 // }
-// Console.Write("Пропичише координату X первого числа: ");
+// Console.Write("Пропишише координату X первого числа: ");
 // double numOneX = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Пропичише координату Y первого числа: ");
+// Console.Write("Пропишише координату Y первого числа: ");
 // double numOneY = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Пропичише координату X второго числа: ");
+// Console.Write("Пропишише координату X второго числа: ");
 // double numTwoX = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Пропичише координату Y второго числа: ");
+// Console.Write("Пропишише координату Y второго числа: ");
 // double numTwoY = Convert.ToDouble(Console.ReadLine());
 
 // Console.Write( $"Расстояние между ними в 2D пространстве: {getDistance(numOneX, numOneY,  numTwoX, numTwoY)}");
