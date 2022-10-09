@@ -33,21 +33,21 @@
 
 // Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
 
-double  getDistance(double numOneX, double numOneY, double numTwoX, double numTwoY) 
-{
-  double distance = Math.Sqrt((numTwoX - numOneX) * (numTwoX - numOneX) + (numTwoY - numOneY) * (numTwoY - numOneY));
-  return Math.Round(distance, 2);
-}
-Console.Write("Пропичише координату X первого числа: ");
-double numOneX = Convert.ToDouble(Console.ReadLine());
-Console.Write("Пропичише координату Y первого числа: ");
-double numOneY = Convert.ToDouble(Console.ReadLine());
-Console.Write("Пропичише координату X второго числа: ");
-double numTwoX = Convert.ToDouble(Console.ReadLine());
-Console.Write("Пропичише координату Y второго числа: ");
-double numTwoY = Convert.ToDouble(Console.ReadLine());
+// double  getDistance(double numOneX, double numOneY, double numTwoX, double numTwoY) 
+// {
+//   double distance = Math.Sqrt((numTwoX - numOneX) * (numTwoX - numOneX) + (numTwoY - numOneY) * (numTwoY - numOneY));
+//   return Math.Round(distance, 2);
+// }
+// Console.Write("Пропичише координату X первого числа: ");
+// double numOneX = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Пропичише координату Y первого числа: ");
+// double numOneY = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Пропичише координату X второго числа: ");
+// double numTwoX = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Пропичише координату Y второго числа: ");
+// double numTwoY = Convert.ToDouble(Console.ReadLine());
 
-Console.Write( $"Расстояние между ними в 2D пространстве: {getDistance(numOneX, numOneY,  numTwoX, numTwoY)}");
+// Console.Write( $"Расстояние между ними в 2D пространстве: {getDistance(numOneX, numOneY,  numTwoX, numTwoY)}");
 
 
 // Напишите программу, которая принимает на вход число (N) и выдаёт ряд квадратов чисел от 1 до N.
