@@ -22,6 +22,7 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
+
 int getSumNumber(int num) 
 {
   int sum = 0;
@@ -37,3 +38,72 @@ Console.WriteLine(getSumNumber(452));
 // Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
 // m = 5 -> [1, 2, 5, 7, 19]
 // m = 3 -> [6, 1, 33]
+
+// int[] getArrayElements(int numElements, int minVal, int maxVal) 
+// {
+//     int[] array = new int[numElements];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//       array[i] = new Random().Next(minVal, maxVal + 1);
+//     }
+
+//     return array;
+// }
+
+// int[] getArrayElementsTwoVersion() 
+// {    
+//     Console.Write("Введите длину создаваемого массива: ");
+//     int arrLength = Convert.ToInt32(Console.ReadLine());
+//     int[] array = new int[arrLength];
+//     Console.Write("Введите минимальное значение рандомного элемента в массиве: ");
+//     int minVal = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Введите максимальное значение рандомного элемента в массиве: ");
+//     int maxVal = Convert.ToInt32(Console.ReadLine());
+
+
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//       array[i] = new Random().Next(minVal, maxVal + 1);
+//     }
+
+//     return array;
+// }
+
+void ShowArray(int[] array) 
+  {
+  foreach (var item in array)
+    Console.Write(item + " ");
+  Console.WriteLine();
+  }
+// Console.Write("Введите длину создаваемого массива: ");
+// int arrLength = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите минимальное значение рандомного элемента в массиве: ");
+// int minVal = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите максимальное значение рандомного элемента в массиве: ");
+// int maxVal = Convert.ToInt32(Console.ReadLine());
+
+// // ShowArray(getArrayElements(arrLength, minVal, maxVal));
+
+// ShowArray(getArrayElementsTwoVersion());
+
+// unclasses home work 
+// // Сгенерировать метод, который будет у пользователя элементы массива запрашивать
+
+
+int[] getArrayElementsThreeVersion() 
+{    
+    Console.Write("Введите длину создаваемого массива: ");
+    int arrLength = Convert.ToInt32(Console.ReadLine());
+    int[] array = new int[arrLength];
+
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"Введите  данные {i + 1} элемента массива: ");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+
+    return array;
+}
+
+
+ShowArray(getArrayElementsThreeVersion());
