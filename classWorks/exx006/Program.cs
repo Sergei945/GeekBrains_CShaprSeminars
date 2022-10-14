@@ -94,7 +94,7 @@ int SumOfNegatives(int[] array)
 // Console.WriteLine(NumOfTwoArray(arr));
 // Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
 
-bool FindNumarr(int[] arr, int num) 
+bool FindNumber(int[] arr, int num) 
 {
   for (int i = 0; i < arr.Length; i++)
   {
@@ -109,7 +109,7 @@ int[] arr = CreateArray(5);
 Console.Write("Введите требуемое значение для поиска в массиве: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if(FindNumarr(arr, num)) 
+if(FindNumber(arr, num)) 
 {
   Console.WriteLine("Данное число есть в массиве");
 } else 
