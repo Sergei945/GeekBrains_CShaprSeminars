@@ -111,8 +111,8 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 if(FindNumber(arr, num)) 
 {
-  Console.WriteLine("Данное число есть в массиве");
+  Console.WriteLine($"число {num} есть в массиве");
 } else 
 {
-  Console.WriteLine("Данного числа нет в массиве");
+  Console.WriteLine($"число {num} нет в массиве");
 }
