@@ -75,4 +75,6 @@ int max = Convert.ToInt32(Console.ReadLine());
 
 ShowArray(CreateRandomArray(size, min, max));
 
+
+
 // Сгенерировать метод, который будет у пользователя элементы массива

@@ -1,25 +1,25 @@
 ﻿// Задача 1 Напишите программу, которая принимает на вход пятизначное число и проверяет, 
 // является ли оно палиндромом.
 
-// void Palindrome(int number)
-// {
-//     if (number < 100000 && number >= 10000)
-//     {
-//         if ((number % 10) == (number / 10000) && 
-//             (12821 % 100) / 10 == (12821 / 1000) % 10)
-//         {
-//             Console.Write("Да");
-//         }
-//         else
-//         {
-//             Console.Write("Нет");
-//         }
-//     }
-//     else
-//     {
-//         Console.WriteLine("Вы ввели не пятизначное число");
-//     }
-// }
+void Palindrome(int number)
+{
+    if (number < 100000 && number >= 10000)
+    {
+        if ((number % 10) == (number / 10000) && 
+            (number % 100) / 10 == (number / 1000) % 10)
+        {
+            Console.Write("Да");
+        }
+        else
+        {
+            Console.Write("Нет");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Вы ввели не пятизначное число");
+    }
+}
 
 // Console.Write("Введите пятизначное число в консоль: ");
 // int usersNumber = Convert.ToInt32(Console.ReadLine());
@@ -71,3 +71,7 @@
 // int usersNumber = Convert.ToInt32(Console.ReadLine());
 // Console.Write($"Выша таблица кубов чисел от 1 до {usersNumber} - ");
 // tableCubeNumber(usersNumber);
+
+
+
+Palindrome(52345);
