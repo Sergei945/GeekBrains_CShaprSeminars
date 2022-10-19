@@ -1,6 +1,4 @@
 ﻿int[] CreateArray(int size) 
-
-
 {
   int[] array = new int[size];
   Console.WriteLine("Creating array: ");

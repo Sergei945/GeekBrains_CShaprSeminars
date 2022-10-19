@@ -39,35 +39,35 @@ Console.WriteLine(getSumNumber(452));
 // m = 5 -> [1, 2, 5, 7, 19]
 // m = 3 -> [6, 1, 33]
 
-// int[] getArrayElements(int numElements, int minVal, int maxVal) 
-// {
-//     int[] array = new int[numElements];
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//       array[i] = new Random().Next(minVal, maxVal + 1);
-//     }
+int[] getArrayElements(int numElements, int minVal, int maxVal) 
+{
+    int[] array = new int[numElements];
+    for (int i = 0; i < array.Length; i++)
+    {
+      array[i] = new Random().Next(minVal, maxVal + 1);
+    }
 
-//     return array;
-// }
+    return array;
+}
 
-// int[] getArrayElementsTwoVersion() 
-// {    
-//     Console.Write("Введите длину создаваемого массива: ");
-//     int arrLength = Convert.ToInt32(Console.ReadLine());
-//     int[] array = new int[arrLength];
-//     Console.Write("Введите минимальное значение рандомного элемента в массиве: ");
-//     int minVal = Convert.ToInt32(Console.ReadLine());
-//     Console.Write("Введите максимальное значение рандомного элемента в массиве: ");
-//     int maxVal = Convert.ToInt32(Console.ReadLine());
+int[] getArrayElementsTwoVersion() 
+{    
+    Console.Write("Введите длину создаваемого массива: ");
+    int arrLength = Convert.ToInt32(Console.ReadLine());
+    int[] array = new int[arrLength];
+    Console.Write("Введите минимальное значение рандомного элемента в массиве: ");
+    int minVal = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите максимальное значение рандомного элемента в массиве: ");
+    int maxVal = Convert.ToInt32(Console.ReadLine());
 
 
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//       array[i] = new Random().Next(minVal, maxVal + 1);
-//     }
+    for (int i = 0; i < array.Length; i++)
+    {
+      array[i] = new Random().Next(minVal, maxVal + 1);
+    }
 
-//     return array;
-// }
+    return array;
+}
 
 void ShowArray(int[] array) 
   {
