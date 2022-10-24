@@ -199,3 +199,83 @@
 //     return word ? "Yes" : "No";
 //   }
 
+// Ваша задача — написать функцию, которая возвращает сумму следующих рядов до n-го члена (параметра).
+// Series: 1 + 1/4 + 1/7 + 1/10 + 1/13 + 1/16 +...
+// 1 --> 1 --> "1.00"
+// 2 --> 1 + 1/4 --> "1.25"
+// 5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"
+
+// string seriesSum(int n)
+// {
+//     string str = "";
+//     double dbl = 0;
+//     if (n == 0)
+//     {
+//         return "0.00";
+//     }
+//     else if (n == 1)
+//     {
+//         return "1.00";
+//     }
+//     else
+//     {
+//         double count = 1;
+//         for (int i = 0; i < n; i++)
+//         {
+//             dbl += 1 / count;
+//             count += 3;
+//         }
+//         dbl = Math.Round(dbl, 2);  
+//     }
+//     str += dbl.ToString();
+//     if(str.Length == 3) {
+//         str += "0";
+//     }
+
+//     return str;
+// }
+
+// string seriesSum (int n) {
+//     double ret = 0;
+//     for (var i = 1; i <= n; i++) 
+//     {
+//       ret += 1f/(3 * i - 2);
+//     }
+//     return ret.ToString("0.00");
+//   }
+// Console.WriteLine(seriesSum(58));
+
+//  string NumberToString(int num)
+//   {
+//    return num.ToString();
+//   }
+
+// Создайте функцию, которая отвечает на вопрос «Вы играете на банджо?».
+// Если ваше имя начинается с буквы «R» или строчной «r», вы играете на банджо!
+
+// Функция принимает имя в качестве единственного аргумента и возвращает одну из следующих строк:
+// name + " plays banjo" 
+// name + " does not play banjo"
+
+string AreYouPlayingBanjo(string name)
+  {
+    return name.ToLower()[0] == 'r' ?  $"{name} plays banjo" :  $"{name} does not play banjo";
+  }
+
+// Console.WriteLine(AreYouPlayingBanjo("pich"));
+
+int NbYear(int p0, double percent, int aug, int p) 
+{
+    int count = 0;
+    int finish = p0;
+    while(finish <= p) {
+        finish += Convert.ToInt32(finish * (percent * 0.01)) + aug;
+        Console.Write(Convert.ToInt32(finish * (percent * 0.01)) + " ");
+        count++;
+    }
+    return count;
+}
+Console.WriteLine(NbYear(1000, 2, 50, 1200));
+
+// Console.WriteLine(2 * 0.01);
+

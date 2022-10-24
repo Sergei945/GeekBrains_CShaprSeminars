@@ -75,3 +75,5 @@ int[,] array = CreateRandom2dArray();
 
 Show2dArray(array);
 Console.WriteLine(SumElementMainDiagonal2dArray(array));
+
+// NextDouble
