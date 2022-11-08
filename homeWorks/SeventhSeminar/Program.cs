@@ -38,7 +38,8 @@ double[,] CreateDoubleRandom2dArray()
 
 string StockIndex2dArray(int[,] array, int row, int column)
 {
-    return array.GetLength(0) <= row && array.GetLength(1) <= column ? "No this element in this 2d array" : $"Yes this element [{row}, {column}] 2d array stock in and have value - {array[row, column]}";
+    return array.GetLength(0) <= row && array.GetLength(1) <= column ? "No this element in this 2d array" :
+                                                                       $"Yes this element [{row}, {column}] 2d array stock in and have value - {array[row, column]}";
 }
 
 // int[,] array = CreateRandom2dArray();

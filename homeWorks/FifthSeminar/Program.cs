@@ -11,13 +11,13 @@ int EvenNumberArray(int[] arr)
     return count;
 }
 
-// Console.Write("Введите количество трёхзначных чисел в массиве: ");
+Console.Write("Введите количество трёхзначных чисел в массиве: ");
 
-// int num = Convert.ToInt32(Console.ReadLine());
-// int[] arr  = CreateRandomArray(num, 100, 999);
-// ShowArray(arr);
+int num = Convert.ToInt32(Console.ReadLine());
+int[] arr  = CreateRandomArray(num, 100, 999);
+ShowArray(arr);
 
-// Console.WriteLine($"Созданный Вами массив имеет - {EvenNumberArray(arr)} чётных чисел");
+Console.WriteLine($"Созданный Вами массив имеет - {EvenNumberArray(arr)} чётных чисел");
 
 // Задача 36: Задайте одномерный массив, заполненный случайными числами. 
 // Найдите сумму элементов, стоящих на нечётных позициях.
@@ -27,8 +27,8 @@ int EvenNumberArray(int[] arr)
 int UnevenSumArrPosition(int[] arr) 
 {
     int count = 0;
-    for (int i = 0; i < arr.Length; i++)
-        if((i + 1) % 2 != 0) 
+    for (int i = 1; i < arr.Length; i+=2)
+        if((i % 2 != 0)) 
             count += arr[i];
     return count;
 }
@@ -70,6 +70,7 @@ int DifferenceMinMaxArray(int[] arr)
 // ShowArray(arr);
 
 // Console.WriteLine($"Разница между максимальным и минимальным массива равна - {DifferenceMinMaxArray(arr)}");
+
 
 void ShowArray(int[] array) 
 {
