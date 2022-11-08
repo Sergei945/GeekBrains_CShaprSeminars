@@ -257,25 +257,147 @@
 // name + " plays banjo" 
 // name + " does not play banjo"
 
-string AreYouPlayingBanjo(string name)
-  {
-    return name.ToLower()[0] == 'r' ?  $"{name} plays banjo" :  $"{name} does not play banjo";
-  }
+// string AreYouPlayingBanjo(string name)
+// {
+//     return name.ToLower()[0] == 'r' ? $"{name} plays banjo" : $"{name} does not play banjo";
+// }
 
 // Console.WriteLine(AreYouPlayingBanjo("pich"));
 
-int NbYear(int p0, double percent, int aug, int p) 
-{
-    int count = 0;
-    int finish = p0;
-    while(finish <= p) {
-        finish += Convert.ToInt32(finish * (percent * 0.01)) + aug;
-        Console.Write(Convert.ToInt32(finish * (percent * 0.01)) + " ");
-        count++;
-    }
-    return count;
-}
-Console.WriteLine(NbYear(1000, 2, 50, 1200));
+// int NbYear(int p0, double percent, int aug, int p)
+// {
+//     int count = 0;
+//     int finish = p0;
+//     while (finish <= p)
+//     {
+//         finish += Convert.ToInt32(finish * (percent * 0.01)) + aug;
+//         Console.Write(Convert.ToInt32(finish * (percent * 0.01)) + " ");
+//         count++;
+//     }
+//     return count;
+// }
+// Console.WriteLine(NbYear(1000, 2, 50, 1200));
 
 // Console.WriteLine(2 * 0.01);
+
+
+// Complete the solution so that it returns true if the first argument(string) 
+// passed in ends with the 2nd argument (also a string).
+
+// solution('abc', 'bc') // returns true
+// solution('abc', 'd') // returns false
+
+
+// bool Solution(string str, string ending)
+// {
+//   if(ending == "") 
+//     return true;
+//   else if(str[str.Length - 1] == ending[ending.Length - 1])
+//     return str.Contains(ending);
+//   return false;
+// }
+
+// Console.WriteLine(Solution("samurai",""));
+
+// bool Solution(string str, string ending)
+// {
+//   return str.EndsWith(ending);
+// }
+
+
+// string MakeUpperCase(string str)
+// {
+//     return str.ToUpper();
+// }
+
+
+// string CountSheep(int n)
+// {
+//   string str = "";
+//     for (int i = 1; i <= n; i++)
+//         str += $"{i} sheep...";
+//     return str;
+// }
+// Console.WriteLine(CountSheep(5));
+
+// public static string CountSheep(int n)
+// {
+//   return string.Concat(Enumerable.Range(1, n).Select(i => $"{i} sheep..."));
+// }
+
+// string EvenOrOdd(int number)
+// {
+//     return number % 2 == 0 ? "Even" : "Odd";
+// }
+
+// int[] CountBy(int x, int n)
+//   {
+//     int[] z = new int[n];
+//     for (int i = 0; i < n; i++)
+//         z[i] = (i + 1) * x;
+//     return z;
+//   }
+
+// int[] CountBy(int x, int n)=>Enumerable.Range(1,n).Select(i=>i*x).ToArray();
+
+// ShowArray(CountBy(1, 50));
+  
+void ShowArray(int[] array) 
+{
+  foreach (var item in array)
+    Console.Write(item + " ");
+  Console.WriteLine();
+}
+
+
+// Цель была вывести длину самого короткого слова
+  // int FindShort(string s)
+  // {
+  //   string[] array = s.Split(' ');
+  //   int j = array[0].Length;
+  //   for (int i = 1; i < array.Length; i++)
+  //     if(array[i].Length < j)
+  //       j = array[i].Length;
+  //   return j;
+  // }
+  // public static int FindShort(string s)
+  // {
+  //   return s.Split(' ').Min(x => x.Length);
+  // }
+
+// Console.Write(FindShort("bitcoin take over the world maybe who knows perhaps"));
+
+
+// bool Hero(int bullets, int dragons)
+//   {
+//     return dragons * 2 <= bullets;
+//   }
+// Console.Write(Hero(1500, 750));
+
+
+
+// // способ нахождения минимального элемента в массиве и его вывод.
+// int FindSmallestInt(int[] args) 
+//   {
+//     return args.Min();
+//   }
+
+// // Если чётный умножаем на 8, если нет то на 9
+//   int Multiply(int x) 
+//   {
+//     return x % 2 == 0 ? x * 8 : x * 9;
+//   }
+
+
+ int GetAge(string inputString)
+  {
+    return inputString[0] - '0';
+  }
+
+  // public static int GetAge(string inputString)
+  // {
+  //   return (int)char.GetNumericValue(inputString[0]);
+  // }
+Console.WriteLine(GetAge("5555"));
+
 
