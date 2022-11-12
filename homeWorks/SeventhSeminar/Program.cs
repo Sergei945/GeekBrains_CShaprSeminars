@@ -23,7 +23,7 @@ double[,] CreateDoubleRandom2dArray()
     return array;
 }
 
-// Show2dArray(CreateDoubleRandom2dArray());
+//  Show2dArrayDouble(CreateDoubleRandom2dArray());
 
 
 
@@ -63,11 +63,11 @@ double[] AverageNumber(int[,] array)
     return doubleArray;
 }
 
-int[,] array = CreateRandom2dArray();
+// int[,] array = CreateRandom2dArray();
 
-Show2dArray(array);
+// Show2dArray(array);
 
-ShowArray(AverageNumber(array));
+// ShowArray(AverageNumber(array));
 
 
 
@@ -79,6 +79,15 @@ void ShowArray(double[] array)
 }
 
 void Show2dArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i, j] + " ");
+        Console.WriteLine();
+    }
+}
+void Show2dArrayDouble(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
